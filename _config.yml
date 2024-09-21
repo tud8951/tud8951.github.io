@@ -75,7 +75,7 @@ ga_domain: bigjackson.us.kg
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team "
-sidebar-avatar: https://i2.hdslb.com/bfs/new_dyn/7fe8bd6412950307bcc45a8e0c35b4ce1549550569.png@626w_560h_1e_1c.avif # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://i0.hdslb.com/bfs/new_dyn/7fe8bd6412950307bcc45a8e0c35b4ce1549550569.png@1052w_!web-dynamic.avif # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
