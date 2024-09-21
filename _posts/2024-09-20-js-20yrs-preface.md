@@ -11,7 +11,7 @@ tags:
 
 >本网站由BigJackson本人制作
 
-我在今天逛B站的时候发现了我第一个上热门的[视频](https://bigjackson.us.kg/videos/),记得当时的我很兴奋，时间过得可真快啊，已经距第一次上热门的视频快一年了，2023年初我的粉丝还不到100个，但是如今已经有2.7w了。
+在那个初夏的日子，我们满怀期待地上传了一段[视频](https://bigjackson.us.kg/videos/)。那时的我们并不知道，这段[视频](https://bigjackson.us.kg/videos/)将成为一段旅程的起点，它不仅记录了我们的成长，也见证了平台的发展。当我再次打开B站，看到自己曾经的作品上了热门榜，心中涌起的是无尽的感慨。时间过得可真快啊，在2023年初我的粉丝还不到100个，但是如今已经有2.7w了。
 ![CSDN图标](https://raw.githubusercontent.com/tud8951/tud8951.github.io/refs/heads/master/img/Screenshot_20240921_155415_tv.danmaku.bili.png "上热门的视频")
 
 ****
