@@ -91,12 +91,16 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "乱序（Midare）", href: "http://mida.re/" },
-    { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
-    { title: "Kun Qian", href: "http://kunq.me" },
-    { title: "Sherry Woo", href: "https://sherrywoo.me/" },
-    { title: "SmdCn", href: "http://blog.smdcn.net" },
-    { title: "JiyinYiyong", href: "http://tiye.me/" },
-    { title: "DHong Say", href: "http://dhong.co" },
-    { title: "尹峰以为", href: "http://ingf.github.io/" },
+    { title: "Out81134", href: "https://space.bilibili.com/3493284294953144?spm_id_from=333.999.0.0" },
+    { title: "姚亮008", href: "https://space.bilibili.com/357442724/?spm_id_from=333.999.0.0" },
+    { title: "寄长风予歌", href: "https://space.bilibili.com/3494379251567353?spm_id_from=333.999.0.0" },
+    { title: "百慕大椰子", href: "https://space.bilibili.com/3493138503043671/?spm_id_from=333.999.0.0" },
+    { title: "残念幽游", href: "https://space.bilibili.com/3494366238738465?spm_id_from=333.999.0.0" },
+    { title: "数码好物libra", href: "https://space.bilibili.com/138804066/?spm_id_from=333.999.0.0" },
+    { title: "科技新观察-jeremie", href: "https://space.bilibili.com/31152763/?spm_id_from=333.999.0.0" },
+    { title: "神么设计Lucas", href: "https://space.bilibili.com/3461576011025252/?spm_id_from=333.999.0.0" },
+    { title: "碳基少年", href: "https://space.bilibili.com/294938732/?spm_id_from=333.999.0.0" },
+    { title: "-陈殇-", href: "https://space.bilibili.com/451031842/?spm_id_from=333.999.0.0" },
+    { title: "乃我白誫", href: "https://space.bilibili.com/34759641?spm_id_from=333.999.0.0" },
+    { title: "节奏大师小虚", href: "https://api.xiaoheihe.cn/v3/bbs/app/api/web/share?link_id=131793215" },
   ]
