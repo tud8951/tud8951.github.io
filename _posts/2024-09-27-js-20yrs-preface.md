@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "我终于拿下属于自己的域名了"
+title:        "9月27日新闻"
 author:       "BigJackson"
 header-style: text
 catalog:      true
