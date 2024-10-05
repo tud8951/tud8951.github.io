@@ -7,7 +7,7 @@ catalog:      true
 tags:
     - Web
     - JavaScript
-    - science
+    - Science
 ---
 
 >本网站由BigJackson本人制作
