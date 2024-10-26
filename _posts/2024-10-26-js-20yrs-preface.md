@@ -14,7 +14,7 @@ tags:
 
 >本网站由BigJackson本人制作
 
-<audio src="music/apt.mp3" preload="none" controls loop></audio>
+<audio src="https://bigjackson.us.kg/music/apt.mp3" preload="none" controls loop></audio>
 
 ****
 
