@@ -5,9 +5,6 @@ author:       "BigJackson"
 header-style: text
 catalog:      true
 tags:
-    - Web
-    - JavaScript
-    - Science
     - news
     - music
 ---
