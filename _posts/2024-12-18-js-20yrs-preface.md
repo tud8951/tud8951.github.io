@@ -14,6 +14,7 @@ tags:
 >本网站由BigJackson本人制作
 
 ## 一键连接 多国线路
+[购买链接](https://gf.bilibili.com/item/detail/1108769032)
 ![1](https://bigjackson.us.kg/jsq/left.png)
 ## 智能、快速、稳定
 智能分流技术，畅快上网体验，完美支持游戏和各种软件网站，独享宽带，国际骨干宽带节点，无延迟更畅快！
