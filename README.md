@@ -1,9 +1,9 @@
-[Hux Blog](https://huangxuan.me)
+[BigJackson Blog](https://bigjackson.us.kg)
 ================================
 
 > I never expected this to become popular.
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![](https://bigjackson.us.kg.img/Blog.png)
 
 
 [User Manual 👉](_doc/Manual.md)
@@ -57,7 +57,7 @@ License
 -------
 
 Apache License 2.0.
-Copyright (c) 2015-present Huxpro
+Copyright (c) 2024-present BigJackson
 
-Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
+BigJackson Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
 Copyright (c) 2013-2016 Blackrock Digital LLC.
