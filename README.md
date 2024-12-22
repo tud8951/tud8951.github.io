@@ -3,7 +3,7 @@
 
 > I never expected this to become popular.
 
-![](https://bigjackson.us.kg.img/Blog.png)
+![](https://bigjackson.us.kg/img/Blog.png)
 
 
 [User Manual 👉](_doc/Manual.md)
