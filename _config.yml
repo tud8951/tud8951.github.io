@@ -88,6 +88,9 @@ service-worker: true
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
+paginate: 5
+paginate_path: "/archive/page:num/"
+
 # Friends
 friends:
   [
