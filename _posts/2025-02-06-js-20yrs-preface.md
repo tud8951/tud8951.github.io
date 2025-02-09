@@ -8,7 +8,7 @@ tags:
     - Web
     - JavaScript
     - Science
-    - Docker
+    - AI
 ---
 
 >本网站由BigJackson本人制作
