@@ -3,7 +3,7 @@ layout:       post
 title:        "闲鱼被骗案例"
 author:       "BigJackson"
 header-style: text
-catalog:      true
+catalog:      false 
 tags:
     - Web
     - JavaScript
