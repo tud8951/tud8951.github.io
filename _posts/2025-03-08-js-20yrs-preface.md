@@ -22,9 +22,6 @@ tags:
 
 ### 效果杠杠的
 
-## 本程序由B站Up主[BigJackson](https://space.bilibili.com/1549550569?spm_id_from=333.337.0.0)制作并开源
-
-
 ****
 
 — BigJackson 哔哩哔哩知名UP主 喜欢高科技产品。[B站主页](https://b23.tv/F3Lr8Pu)
