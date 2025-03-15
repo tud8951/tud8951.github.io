@@ -50,7 +50,7 @@ tags:
 
 20、你要成长，绝处也能逢生
 
-![photo 1](https://bigjackson.us.kg/img/1.webp "photo 1")
+![photo 1](/img/1.webp "photo 1")
 
 21、心态决定高度，细节决定成败。
 
@@ -92,7 +92,7 @@ tags:
 
 40、人们总是喜欢高估自己所没有的东西的价值，而忽视自己本身所拥有的东西。
 
-![photo 2](https://bigjackson.us.kg/img/2.jfif "photo 2")
+![photo 2](/img/2.jfif "photo 2")
 
 41、精彩的人生是在有限生命中实现无限价值的人生。
 
@@ -134,7 +134,7 @@ tags:
 
 60、当你想要放弃的时候想想当初为什么坚持到这里。
 
-![photo 3](https://bigjackson.us.kg/img/3.jfif "photo 3")
+![photo 3](/img/3.jfif "photo 3")
 
 61、以良好的心态面对生活，你的生活才美好。
 
@@ -176,7 +176,7 @@ tags:
 
 80、每个梦想，都是在现实中坚持不懈才实现的。
 
-![photo 4](https://bigjackson.us.kg/img/4.jpg "photo 4")
+![photo 4](/img/4.jpg "photo 4")
 
 81、只要路是对的，就不怕路远。
 

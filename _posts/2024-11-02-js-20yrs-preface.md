@@ -14,9 +14,9 @@ tags:
 
 我在今天下午玩BlueArchive的时候，抽了一个十连，出了一个Ako和Hibiki
 
-![photo 1](https://bigjackson.us.kg/img/Ako.jpg "photo 1")
-![photo 2](https://bigjackson.us.kg/img/Hibiki.jpg "photo 2")
-<iframe height=498 width=510 src="https://bigjackson.us.kg/img/24-11-2.mp4">
+![photo 1](/img/Ako.jpg "photo 1")
+![photo 2](/img/Hibiki.jpg "photo 2")
+<iframe height=498 width=510 src="/img/24-11-2.mp4">
 
 ****
 
