@@ -973,3 +973,53 @@ ol li {
         padding-left: 20px;
     }
 }
+
+/* Social Links Styles */
+#footer .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+#footer .social-links a {
+    color: #5c6b72;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#footer .social-links a:hover {
+    background: #66afef;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+#footer .social-links a i {
+    font-size: 16px;
+}
+
+/* GitHub specific color */
+#footer .social-links a[href*="github"]:hover {
+    background: #333;
+}
+
+/* Weibo specific color */
+#footer .social-links a[href*="weibo"]:hover {
+    background: #e6162d;
+}
+
+/* Twitter specific color */
+#footer .social-links a[href*="twitter"]:hover {
+    background: #1da1f2;
+}
+
+/* Email specific color */
+#footer .social-links a[href*="mailto"]:hover {
+    background: #ea4335;
+}
