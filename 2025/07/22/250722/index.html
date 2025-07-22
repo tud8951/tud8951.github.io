@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>10元机场推荐！红杏云机场 | BigJackson Blog</title>
+    <title>[全网独家]用OECT搭建casaos（国内可用版） | BigJackson Blog</title>
     <meta name="author" content="BigJackson" />
     <meta name="description" content="BigJackson的个人博客" />
     <meta name="keywords" content="" />
@@ -156,14 +156,14 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>10元机场推荐！红杏云机场</h1>
+        <h1>[全网独家]用OECT搭建casaos（国内可用版）</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/7/6
+            2025/7/22
         </span>
         
         <span class="category">
@@ -184,14 +184,14 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00a596">
+                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #03a9f4">
                     教程
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #03a9f4">
+                <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #ff7d73">
                     资源
                 </a>
             </span>
@@ -205,15 +205,8 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00a596">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00bcd4">
                     博客
-                </a>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/" style="color: #ffa2c4">
-                    机场推荐
                 </a>
             </span>
             
@@ -225,8 +218,44 @@
         <blockquote>
 <p>原创</p>
 </blockquote>
-<h1 id="10元机场推荐！"><a href="#10元机场推荐！" class="headerlink" title="10元机场推荐！"></a>10元机场推荐！</h1><p><img src="/images/250706.jpg"></p>
-<p>这个机场性价比相当高了，主播自己都一直在用<br>需要的兄弟们可以到这里来查看<a target="_blank" rel="noopener" href="https://hongxing.one/web/#/login?code=KTioRfDh">红杏云官网</a><br>或者在我的博客网站的最上方也有（就是那个<a href="https://bigjackson.top/categories/">Categories</a>按钮）</p>
+<p>今天教大家用OECT搭建CasaOS，虽然别的大佬已经发过教程了，但是他们的教程大陆用不了</p>
+<p>今天我带来的教程绝对好用</p>
+<h1 id="需要用的代码："><a href="#需要用的代码：" class="headerlink" title="需要用的代码："></a>需要用的代码：</h1><p>一键换软件源命令</p>
+<div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;" onclick="copyToClipboard('command1', this)">
+<code id="command1">bash <(curl -sSL https://linuxmirrors.cn/main.sh)</code>
+<div style="font-size: 12px; color: #666; margin-top: 5px;">点击复制命令</div>
+</div>
+
+<p>一键docker换源</p>
+<div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;" onclick="copyToClipboard('command2', this)">
+<code id="command2">bash <(curl -sSL https://linuxmirrors.cn/docker.sh)</code>
+<div style="font-size: 12px; color: #666; margin-top: 5px;">点击复制命令</div>
+</div>
+
+<p>使用中国区Azure源安装Docker</p>
+<div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;" onclick="copyToClipboard('command3', this)">
+<code id="command3">curl -fsSL https://get.docker.com | bash -s docker --mirror AzureChinaCloud</code>
+<div style="font-size: 12px; color: #666; margin-top: 5px;">点击复制命令</div>
+</div>
+
+<p>请使用以下命令来下载安装脚本：</p>
+<div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;" onclick="copyToClipboard('command4', this)">
+<code id="command4">curl -fsSL https://get.casaos.io -o casaos_install.sh</code>
+<div style="font-size: 12px; color: #666; margin-top: 5px;">点击复制命令</div>
+</div>
+
+<p>下载完成后，您就可以使用文本编辑器（如 nano 或 vi）打开 casaos_install.sh 文件进行编辑了：</p>
+<div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;" onclick="copyToClipboard('command5', this)">
+<code id="command5">nano casaos_install.sh</code>
+<div style="font-size: 12px; color: #666; margin-top: 5px;">点击复制命令</div>
+</div>
+
+<p>编辑完成后，保存文件，然后您可以手动执行这个修改后的脚本：</p>
+<div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;" onclick="copyToClipboard('command6', this)">
+<code id="command6">sudo bash casaos_install.sh</code>
+<div style="font-size: 12px; color: #666; margin-top: 5px;">点击复制命令</div>
+</div>
+
 <hr>
 <h1 id="电报最强中文搜索工具"><a href="#电报最强中文搜索工具" class="headerlink" title="电报最强中文搜索工具"></a><a target="_blank" rel="noopener" href="https://t.me/nbsearch">电报最强中文搜索工具</a></h1><p>BigJackson的<a target="_blank" rel="noopener" href="https://t.me/CNBigJackson">Telegram频道</a></p>
 
