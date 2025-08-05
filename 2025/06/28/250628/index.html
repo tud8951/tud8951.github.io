@@ -184,28 +184,28 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00bcd4">
+                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00a596">
                     教程
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #00a596">
+                <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #ffa2c4">
                     资源
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ffa2c4">
+                <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ff7d73">
                     科技
                 </a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ff7d73">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00a596">
                     博客
                 </a>
             </span>
@@ -218,7 +218,30 @@
         <p>本期视频将教大家制作免费的高速节点</p>
 <h1 id="本期视频所需链接"><a href="#本期视频所需链接" class="headerlink" title="本期视频所需链接"></a>本期视频所需链接</h1><p>1.<a target="_blank" rel="noopener" href="https://console.run.claw.cloud/signin?link=NIPA5JTWJPG0">ClawCloud</a></p>
 <p>2.<a target="_blank" rel="noopener" href="https://freev2ray.dpdns.org/">V2RayN</a></p>
-<p>Docker地址：7techlife&#x2F;seven</p>
+<p>Docker地址：</p>
+<div style="background-color: #f5f5f5; padding: 10px; border-radius: 5px; border: 1px solid #ddd; cursor: pointer;" onclick="copyToClipboard(this)">
+<code id="command">7techlife/seven</code>
+<div style="font-size: 12px; color: #666; margin-top: 5px;">点击复制命令</div>
+</div>
+
+<script>
+function copyToClipboard(element) {
+    const text = element.querySelector('code').textContent;
+    navigator.clipboard.writeText(text).then(function() {
+        const originalText = element.querySelector('div').textContent;
+        element.querySelector('div').textContent = '已复制到剪贴板！';
+        element.style.backgroundColor = '#e8f5e8';
+        setTimeout(function() {
+            element.querySelector('div').textContent = originalText;
+            element.style.backgroundColor = '#f5f5f5';
+        }, 2000);
+    }).catch(function(err) {
+        console.error('复制失败: ', err);
+        alert('复制失败，请手动复制');
+    });
+}
+</script>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NOTK2eI3UHU?si=EuZJ0SGG-sVjLNhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <hr>
