@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bigjackson.top/categories/index.html</loc>
+    
+    <lastmod>2025-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bigjackson.top/2025/08/23/250823/</loc>
     
     <lastmod>2025-08-23</lastmod>
@@ -57,15 +66,6 @@
   
   <url>
     <loc>https://bigjackson.top/2025/07/20/250720/</loc>
-    
-    <lastmod>2025-07-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bigjackson.top/categories/index.html</loc>
     
     <lastmod>2025-07-20</lastmod>
     
