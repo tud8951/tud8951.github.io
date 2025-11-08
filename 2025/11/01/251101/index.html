@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Categories: Guides | BigJackson Blog</title>
+    <title>搭建一个高仿小红书的网站 | BigJackson Blog</title>
     <meta name="author" content="BigJackson" />
     <meta name="description" content="欢迎来到 BigJackson 的博客，这里分享技术教程、生活感悟和有趣的项目，热爱技术，热爱生活，让我们一起探索这个精彩的世界" />
     <meta name="keywords" content="BigJackson,个人博客,技术分享,生活记录,VPN,翻墙,BigJackson Blog,BigJackson博客,大杰克森博客,大杰克森Blog" />
@@ -37,6 +37,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -152,14 +156,20 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="archives">
-    
-    <div class="categories-tags">
+            <div class="article">
+    <div>
+        <h1>搭建一个高仿小红书的网站</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/11/1
+        </span>
         
-        
-        
-        <span>
-            <a href="/categories/%E6%97%A5%E5%B8%B8/" style="background: #ffa2c4">
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
@@ -168,7 +178,71 @@
         </span>
         
         
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00a596">
+                    教程
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #03a9f4">
+                    资源
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ff7d73">
+                    科技
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ffa2c4">
+                    博客
+                </a>
+            </span>
+            
+        </span>
+        
     </div>
+    
+    <div class="content" v-pre>
+        <p>今天这期视频我要教大家用<a target="_blank" rel="noopener" href="https://www.rainyun.com/bigjacks_">雨云</a>来搭建一个高仿小红书的网站。</p>
+<p>安装1p：</p>
+<p>bash -c “$(curl -sSL <a target="_blank" rel="noopener" href="https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh">https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh</a>)”</p>
+<p>安装docker：</p>
+<p>bash &lt;(curl -sSL <a target="_blank" rel="noopener" href="https://linuxmirrors.cn/docker.sh">https://linuxmirrors.cn/docker.sh</a>)</p>
+<p>项目源码：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/ZTMYO/XiaoShiLiu/archive/refs/heads/master.zip">https://github.com/ZTMYO/XiaoShiLiu/archive/refs/heads/master.zip</a></p>
+<p>前端环境变量：</p>
+<p>VITE_API_BASE_URL&#x3D;<a target="_blank" rel="noopener" href="http://localhost:3001/api">http://localhost:3001/api</a></p>
+<p>后端环境变量：</p>
+<p>DB_HOST&#x3D;1Panel-mysql-lDjS</p>
+<p>DB_USER&#x3D;xiaoshiliu</p>
+<p>DB_PASSWORD&#x3D;5YW2pbMr8Zmdk5AX</p>
+<p>DB_NAME&#x3D;xiaoshiliu</p>
+<p>DB_PORT&#x3D;3306</p>
+<p>IMAGE_UPLOAD_STRATEGY&#x3D;local</p>
+<p>LOCAL_BASE_URL&#x3D;<a target="_blank" rel="noopener" href="http://localhost:3001/">http://localhost:3001</a></p>
+<p>默认账号为admin，密码为123456</p>
+
+    </div>
+    
+    
+    
+    
+    
+    
     
 </div>
 
@@ -214,6 +288,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>
