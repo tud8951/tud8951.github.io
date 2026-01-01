@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start --><link rel="stylesheet" href="https://api.hypcvgm.top/NeteaseMiniPlayer/netease-mini-player-v2.css"><!-- hexo injector head_begin end -->
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8" />
+    <title>用NekoRay和NekoBox给windows电脑制作一个免费高速的VPN配置 | BigJackson Blog</title>
+    <meta name="author" content="BigJackson" />
+    <meta name="description" content="欢迎来到 BigJackson 的博客，这里分享技术教程、生活感悟和有趣的项目，热爱技术，热爱生活，让我们一起探索这个精彩的世界" />
+    <meta name="keywords" content="BigJackson,个人博客,技术分享,生活记录,VPN,翻墙,BigJackson Blog,BigJackson博客,大杰克森博客,大杰克森Blog" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5310755918657438"
+     crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 7.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-5310755918657438">
+    </amp-auto-ads>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>BIGJACKSON BLOG</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;BIGJACKSON BLOG</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>用NekoRay和NekoBox给windows电脑制作一个免费高速的VPN配置</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/7/8
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #ffa2c4">
+                    教程
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #ff7d73">
+                    资源
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #00bcd4">
+                    科技
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00a596">
+                    博客
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h2 id="本期将教大家如何用NekoRay和NekoBox给windows电脑制作一个免费高速的VPN配置"><a href="#本期将教大家如何用NekoRay和NekoBox给windows电脑制作一个免费高速的VPN配置" class="headerlink" title="本期将教大家如何用NekoRay和NekoBox给windows电脑制作一个免费高速的VPN配置"></a>本期将教大家如何用NekoRay和NekoBox给windows电脑制作一个免费高速的VPN配置</h2><h3 id="需要用到的程序我都给大家列出来了"><a href="#需要用到的程序我都给大家列出来了" class="headerlink" title="需要用到的程序我都给大家列出来了"></a>需要用到的程序我都给大家列出来了</h3><p>1.<a target="_blank" rel="noopener" href="https://pan.090828.xyz/nekoray-3.26-2023-12-09-windows64.zip">NekoRay</a><br>2.<a target="_blank" rel="noopener" href="https://pan.090828.xyz/CloudflareWarpSpeedTest-v1.5.15-windows-amd64.zip">CloudFlare Warp优选工具</a><br>3.<a target="_blank" rel="noopener" href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases">NekoBox</a><br>4.<a target="_blank" rel="noopener" href="https://pan.090828.xyz/code.txt">需要用到的代码</a></p>
+<hr>
+<h1 id="电报最强中文搜索工具"><a href="#电报最强中文搜索工具" class="headerlink" title="电报最强中文搜索工具"></a><a target="_blank" rel="noopener" href="https://t.me/nbsearch">电报最强中文搜索工具</a></h1><p>BigJackson的<a target="_blank" rel="noopener" href="https://t.me/CNBigJackson">Telegram频道</a></p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2026 BigJackson Blog
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;BigJackson
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/tud8951" target="_blank" rel="noopener">
+                <i class="fab fa-github fa-fw"></i>
+                GitHub
+            </a>
+            <a href="https://www.youtube.com/@CNBigJackson" target="_blank" rel="noopener">
+                <i class="fab fa-youtube fa-fw"></i>
+                YouTube
+            </a>
+            <a href="https://t.me/cnbigjackson" target="_blank" rel="noopener">
+                <i class="fab fa-telegram fa-fw"></i>
+                Telegram
+            </a>
+            <a href="mailto:tud8951@bigjackson.top">
+                <i class="fas fa-envelope fa-fw"></i>
+                邮箱
+            </a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+    
+
+
+
+
+    
+<!-- hexo injector body_end start --><script src="https://api.hypcvgm.top/NeteaseMiniPlayer/netease-mini-player-v2.js"></script><div class="music-section"><div class="netease-mini-player" data-playlist-id="17383968140" data-embed="false" data-position="bottom-right" data-lyric="true" data-theme="auto"></div></div><!-- hexo injector body_end end --><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
+</html>

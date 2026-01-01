@@ -1,0 +1,953 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><!-- hexo injector head_begin start --><link rel="stylesheet" href="https://api.hypcvgm.top/NeteaseMiniPlayer/netease-mini-player-v2.css"><!-- hexo injector head_begin end -->
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8" />
+    <title>BigJackson Blog</title>
+    <meta name="author" content="BigJackson" />
+    <meta name="description" content="欢迎来到 BigJackson 的博客，这里分享技术教程、生活感悟和有趣的项目，热爱技术，热爱生活，让我们一起探索这个精彩的世界" />
+    <meta name="keywords" content="BigJackson,个人博客,技术分享,生活记录,VPN,翻墙,BigJackson Blog,BigJackson博客,大杰克森博客,大杰克森Blog" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/images/avatar.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+<script src="/js/lib/home.js"></script>
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5310755918657438"
+     crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 7.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+<body>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-5310755918657438">
+    </amp-auto-ads>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>BIGJACKSON BLOG</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;BIGJACKSON BLOG</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div id="home-head">
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="/images/background.jpg"
+    ></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1>BigJackson Blog</h1>
+                <h3>技术探索与生活记录</h3>
+                <h5>欢迎来到 BigJackson 的博客，这里分享技术教程、生活感悟和有趣的项目，热爱技术，热爱生活，让我们一起探索这个精彩的世界</h5>
+            </div>
+        </span>
+    </div>
+</div>
+<div
+    id="home-posts-wrap"
+    ref="homePostsWrap"
+    true
+>
+    <div id="home-posts">
+        
+
+<div class="post">
+    <a href="/2025/12/13/251213/">
+        <h2 class="post-title">免费不限流量高速节点搭建 | 代理部署教程</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/12/13
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>本期视频采用的项目为<a target="_blank" rel="noopener" href="https://github.com/byJoey/ech-wk">Cloudflare ECH 项目 V1.4</a></p>
+<p>优选IP：<a target="_blank" rel="noopener" href="https://cf.090227.xyz/">https://cf.090227.xyz/</a></p>
+<h1 id="BigJackson的Telegram频道"><a href="#BigJackson的Telegram频道" class="headerlink" title="BigJackson的Telegram频道"></a>BigJackson的<a target="_blank" rel="noopener" href="https://t.me/CNBigJackson">Telegram频道</a></h1>
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00bcd4">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #03a9f4">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ff7d73">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ffa2c4">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/12/13/251213/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/11/29/251129/">
+        <h2 class="post-title">cloudflare搭建免费节点，自选优选IP</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/11/29
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>项目地址：<a target="_blank" rel="noopener" href="https://github.com/cmliu/edgetunnel?tab=readme-ov-file">https://github.com/cmliu/edgetunnel?tab=readme-ov-file</a></p>
+<p>cloudflare官网：<a target="_blank" rel="noopener" href="https://www.cloudflare.com/">https://www.cloudflare.com</a></p>
+<p>IP获取网站：<a target="_blank" rel="noopener" href="https://fofa.info/">https://fofa.info</a></p>
+<p>筛选代码：</p>
+<pre><code>asn!="13335" &amp;&amp; region="TW" &amp;&amp; server=="cloudflare"</code></pre>
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #ffa2c4">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #00a596">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #00bcd4">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #03a9f4">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/11/29/251129/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/11/23/251123/">
+        <h2 class="post-title">最新cf节点搭建教程 | 内置IP优选+运营商分流 | 彻底告别节点失效 | 完美解锁AI和TK</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/11/23
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <ol>
+<li>CfNew:<a target="_blank" rel="noopener" href="https://github.com/byJoey/cfnew">点击此处到GitHub库</a></li>
+<li>获取uuid<a target="_blank" rel="noopener" href="https://www.uuidgenerator.net/">点击获取</a></li>
+</ol>
+<p>变量名称UUID：u<br>KV名称：C</p>
+<h1 id="BigJackson的Telegram频道"><a href="#BigJackson的Telegram频道" class="headerlink" title="BigJackson的Telegram频道"></a>BigJackson的<a target="_blank" rel="noopener" href="https://t.me/CNBigJackson">Telegram频道</a></h1>
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #03a9f4">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #ffa2c4">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #00bcd4">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #03a9f4">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/11/23/251123/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/11/15/251115/">
+        <h2 class="post-title">2025年最新的免费域名 | 可以部署到Cloudflare | 完全免费 | 永久有效</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/11/15
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>教你0成本获取一个永久域名 <img src="/images/2025-11-15.png"> </p>
+<h1 id="付费机场推荐红杏云"><a href="#付费机场推荐红杏云" class="headerlink" title="付费机场推荐红杏云"></a>付费机场推荐<a target="_blank" rel="noopener" href="https://vpn.bigjackson.top/">红杏云</a></h1>
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #03a9f4">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #00a596">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ffa2c4">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00a596">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/11/15/251115/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/11/01/251101/">
+        <h2 class="post-title">搭建一个高仿小红书的网站</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/11/1
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>教你搭建一个高仿小红书的网站</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00a596">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #00bcd4">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ff7d73">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00a596">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/11/01/251101/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/10/25/251025/">
+        <h2 class="post-title">2025年最新高速机场 | 便宜稳定 | 8k秒开 | 解锁流媒体</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/10/25
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>2025年最新高速机场推荐，便宜稳定，8k秒开，解锁流媒体</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #ff7d73">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #00bcd4">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ffa2c4">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00a596">博客</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/VPN/" style="color: #00bcd4">VPN</a>
+        </span>
+        
+    </div>
+    <a href="/2025/10/25/251025/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/10/19/251019/">
+        <h2 class="post-title">BPB 3.6教程 | 全网最全的BPB 3.6使用教程 | 秒开4K | 解锁流媒体</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/10/19
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>BPB 3.6使用教程，秒开4K，解锁流媒体</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #03a9f4">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #ff7d73">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #00a596">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ff7d73">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/10/19/251019/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/10/12/251012/">
+        <h2 class="post-title">免费容器部署平台！leaflow 使用教程｜本人实测</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/10/12
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>leaflow 使用教程｜本人实测</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00a596">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #ffa2c4">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #ff7d73">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00bcd4">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/10/12/251012/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/10/07/251007/">
+        <h2 class="post-title">最帅的节点搭建教程 | 免费 | 纯净 | 高速节点 | 解锁流媒体 | 流畅访问Tiktok</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/10/7
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>搭建一个最帅的节点，最帅的节点搭建教程 | 免费 | 纯净 | 秒开 | 解锁流媒体 | 流畅访问Tiktok</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #00a596">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #ffa2c4">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #00a596">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #03a9f4">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/10/07/251007/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/09/27/250927/">
+        <h2 class="post-title">【2025最新】Telegram 使用教程| 18禁 | 汉化 | 注册 | 安全隐私 | 解锁ios封禁</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%97%A5%E5%B8%B8/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                日常
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/9/27
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <blockquote>
+<p>原创</p>
+</blockquote>
+<p><img src="/images/20250927.jpg"></p>
+<p>本期视频我会教大家使用TG，从小白成为老司机</p>
+<p>内用包括如何下载，如何隐私设置，如何解除18🈲限制</p>
+<p>大家可以加一下我的<a target="_blank" rel="noopener" href="https://t.me/CNBigJackson">Telegram频道</a></p>
+<h1 id="电报最强中文搜索工具"><a href="#电报最强中文搜索工具" class="headerlink" title="电报最强中文搜索工具"></a><a target="_blank" rel="noopener" href="https://t.me/nbsearch">电报最强中文搜索工具</a></h1>
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #ff7d73">教程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E8%B5%84%E6%BA%90/" style="color: #00bcd4">资源</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E7%A7%91%E6%8A%80/" style="color: #00a596">科技</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #ff7d73">博客</a>
+        </span>
+        
+    </div>
+    <a href="/2025/09/27/250927/" class="go-post">阅读全文</a>
+</div>
+
+
+        <div class="page-current">
+    
+    <span class="current">1</span>
+    
+    <a class="page-num" href="/page/2">
+        2
+    </a>
+    
+    
+    <a class="page-num" href="/page/3">
+        3
+    </a>
+    
+    
+    
+    <a class="page-num" href="/page/2/">
+        <i class="fa-solid fa-caret-right fa-fw"></i>
+    </a>
+    
+</div>
+
+    </div>
+    
+    <div id="home-card">
+        <div id="card-style">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="/images/avatar.jpg" alt="avatar" />
+        </div>
+        <div class="name">BigJackson</div>
+        <div class="description">
+            <p>欢迎来到 BigJackson 的博客</p>
+<p>这里分享技术教程、生活感悟和有趣的项目</p>
+<p>热爱技术，热爱生活</p>
+<p>让我们一起探索这个精彩的世界</p>
+
+        </div>
+        
+        
+        <div class="friend-links">
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://www.youtube.com/@CNBigJackson">YouTube</a>
+            </div>
+            
+            <div class="friend-link">
+                <a target="_blank" rel="noopener" href="https://t.me/CNBigJackson">Telegram</a>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+    </div>
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2026 BigJackson Blog
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;BigJackson
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/tud8951" target="_blank" rel="noopener">
+                <i class="fab fa-github fa-fw"></i>
+                GitHub
+            </a>
+            <a href="https://www.youtube.com/@CNBigJackson" target="_blank" rel="noopener">
+                <i class="fab fa-youtube fa-fw"></i>
+                YouTube
+            </a>
+            <a href="https://t.me/cnbigjackson" target="_blank" rel="noopener">
+                <i class="fab fa-telegram fa-fw"></i>
+                Telegram
+            </a>
+            <a href="mailto:tud8951@bigjackson.top">
+                <i class="fas fa-envelope fa-fw"></i>
+                邮箱
+            </a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    
+<!-- hexo injector body_end start --><script src="https://api.hypcvgm.top/NeteaseMiniPlayer/netease-mini-player-v2.js"></script><div class="music-section"><div class="netease-mini-player" data-playlist-id="17383968140" data-embed="false" data-position="bottom-right" data-lyric="true" data-theme="auto"></div></div><!-- hexo injector body_end end --><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
+</html>
