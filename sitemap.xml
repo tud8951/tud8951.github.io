@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bigjackson.top/kvideo.json</loc>
+    
+    <lastmod>2026-02-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bigjackson.top/2026/01/10/260110/</loc>
     
     <lastmod>2026-01-10</lastmod>
@@ -92,6 +101,15 @@
   </url>
   
   <url>
+    <loc>https://bigjackson.top/2025/11/23/251123/</loc>
+    
+    <lastmod>2025-12-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bigjackson.top/2025/10/25/251025/</loc>
     
     <lastmod>2025-12-20</lastmod>
@@ -111,15 +129,6 @@
   
   <url>
     <loc>https://bigjackson.top/2025/11/15/251115/</loc>
-    
-    <lastmod>2025-12-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bigjackson.top/2025/11/23/251123/</loc>
     
     <lastmod>2025-12-20</lastmod>
     
@@ -200,15 +209,6 @@
   </url>
   
   <url>
-    <loc>https://bigjackson.top/2025/07/09/250709/</loc>
-    
-    <lastmod>2025-12-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://bigjackson.top/2025/07/08/250708/</loc>
     
     <lastmod>2025-12-20</lastmod>
@@ -218,7 +218,16 @@
   </url>
   
   <url>
-    <loc>https://bigjackson.top/2025/07/02/250702/</loc>
+    <loc>https://bigjackson.top/2025/07/09/250709/</loc>
+    
+    <lastmod>2025-12-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bigjackson.top/2025/07/06/250706/</loc>
     
     <lastmod>2025-12-20</lastmod>
     
@@ -236,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://bigjackson.top/2025/07/06/250706/</loc>
+    <loc>https://bigjackson.top/2025/07/02/250702/</loc>
     
     <lastmod>2025-12-20</lastmod>
     
@@ -274,7 +283,7 @@
 
   <url>
     <loc>https://bigjackson.top/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -282,49 +291,49 @@
   
   <url>
     <loc>https://bigjackson.top/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bigjackson.top/tags/%E8%B5%84%E6%BA%90/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bigjackson.top/tags/%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bigjackson.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bigjackson.top/tags/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bigjackson.top/tags/%E6%9A%97%E7%BD%91/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bigjackson.top/tags/VPN/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -333,7 +342,7 @@
   
   <url>
     <loc>https://bigjackson.top/categories/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
